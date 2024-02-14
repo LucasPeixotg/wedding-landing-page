@@ -1,5 +1,6 @@
 body {
-	background: #f5f5f5;
+	background: #efefef;
+	color: #333;
 }
 
 .app {
@@ -15,6 +16,63 @@ body {
 	font-optical-sizing: auto;
 	font-weight: 600;
 	font-style: normal;
-	color: #333;
 	font-size: 4em;
 }
+
+.accent-color {
+	color: #BF9B30;
+}
+
+.btn-accent {
+	border-color: #BF9B30;
+	background: #BF9B30;
+	transition-duration: 300ms;
+	font-weight: bold;
+	color: #efefef;
+}
+
+.btn-accent:hover {
+	border-color: #a88b33;
+	background: #a88b33;
+	color: #efefef;
+}
+
+
+.montserrat {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}  
+
+/*
+.neumorphic {
+	border: none;
+	border-radius: 500px;
+	background: linear-gradient(145deg, #ffffff, #b1b1b1);;
+	box-shadow:  25px 25px 51px #b1b1b1,
+			 -25px -25px 51px #ffffff;
+}
+
+.shine::before {
+	content: "";
+	background: #fffa;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: -100%;
+	top: 0;
+	animation: brilliant 10s infinite;
+}
+
+@keyframes brilliant {
+	0% {
+		left: -100%;
+		transition-property: left;
+	}
+	100% {
+		left: 100%;
+		transition-property: left;
+	}
+}
+
+*/
