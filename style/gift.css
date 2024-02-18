@@ -37,25 +37,3 @@ body {
         transform: translateY(-40%) translateX(-100%);
     }
 }
-
-.gift-container {
-    height: 100vh;
-    box-sizing: border-box;
-}
-
-.gift-container h2 {
-    font-family: "Playfair Display", serif;
-}
-
-.gift-container h1 {
-    font-size: 3rem;
-}
-
-.gift-container .image {
-    height: 50vh;
-    margin-bottom: 100px;
-}
-
-.gift-container .image img {
-    height: 100%;
-}

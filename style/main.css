@@ -47,7 +47,6 @@ body {
 	font-style: normal;
 }  
 
-/*
 .neumorphic {
 	border: none;
 	border-radius: 500px;
@@ -55,7 +54,8 @@ body {
 	box-shadow:  25px 25px 51px #b1b1b1,
 			 -25px -25px 51px #ffffff;
 }
-
+			
+/*
 .shine::before {
 	content: "";
 	background: #fffa;
