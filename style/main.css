@@ -1,13 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-	background: #efefef;
+	background: #D1D8EC;
 	color: #333;
 	overflow-x: hidden !important;
+	border: solid 5px #BF9B30;
+	
+	border-left-color: #BF9B30;
+	border-top-color: #BF9B30;
+	border-right-color: #e7c150;
+	border-bottom-color: #e7c150;
+
+	box-shadow: inset 20px 20px 60px #bebebe,
+            inset -20px -20px 60px #ffffff;
 }
 
 .app {
 	height: 100vh;
 	width: 100vw;
-	border: solid 4px #BF9B30;
 }
 
 .app .details {
@@ -26,18 +38,25 @@ body {
 	color: #BF9B30;
 }
 
-.btn-accent {
-	border-color: #BF9B30;
-	background: #BF9B30;
-	transition-duration: 300ms;
-	font-weight: bold;
-	color: #efefef;
+.btn-neumorphic {
+	text-decoration: none;
+	color: #333;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    background: #D1D8EC;
+	-webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+	box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+	transition: 400ms;
 }
 
-.btn-accent:hover {
-	border-color: #a88b33;
-	background: #a88b33;
-	color: #efefef;
+.btn-neumorphic:hover {
+	-webkit-box-shadow: 6px 6px 12px #b2b8c9, -6px -6px 12px #f0f8ff;
+	box-shadow: 6px 6px 12px #b2b8c9, -6px -6px 12px #f0f8ff;
+}
+
+.btn-neumorphic:active {
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 
@@ -47,13 +66,7 @@ body {
 	font-style: normal;
 }  
 
-.neumorphic {
-	border: none;
-	border-radius: 500px;
-	background: linear-gradient(145deg, #ffffff, #b1b1b1);;
-	box-shadow:  25px 25px 51px #b1b1b1,
-			 -25px -25px 51px #ffffff;
-}
+
 			
 /*
 .shine::before {

@@ -1,12 +1,9 @@
-body {
-	background: #efefef;
-	color: #333;
-	overflow-x: hidden;
-    border: solid 4px #BF9B30;
-}
-    
 .title-section {
+    box-sizing: content-box;
     height: 100vh;
+    /*border-bottom: 3px #333 solid;*/
+    margin-bottom: 5em;
+    box-shadow: 0 -40px 50px -50px #000 inset;
 }
 
 .title-section h1 {
@@ -36,4 +33,14 @@ body {
         opacity: 0;
         transform: translateY(-40%) translateX(-100%);
     }
+}
+
+
+.neumorphic {
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    background: #D1D8EC;
+    -webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+    box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+    margin-bottom: 5em;
 }
