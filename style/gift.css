@@ -10,6 +10,7 @@
     font-size: 3rem;
 }
 
+/*
 .title-section::before {
     content: "";
     animation: bounce 1.5s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -34,13 +35,18 @@
         transform: translateY(-40%) translateX(-100%);
     }
 }
+*/
 
-
-.neumorphic {
+.gift-card {
 	-webkit-border-radius: 50px;
     border-radius: 50px;
     background: #D1D8EC;
     -webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
     box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
     margin-bottom: 5em;
+}
+
+.gift-card h4 {
+    position: relative;
+    bottom: 0;
 }
