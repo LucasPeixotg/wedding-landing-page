@@ -4,6 +4,7 @@
 
 body {
 	background: #D1D8EC;
+	background: #D1D8EC;
 	color: #333;
 	overflow-x: hidden !important;
 	border: solid 5px #BF9B30;
@@ -12,9 +13,9 @@ body {
 	border-top-color: #BF9B30;
 	border-right-color: #e7c150;
 	border-bottom-color: #e7c150;
-
+	
 	box-shadow: inset 20px 20px 60px #bebebe,
-            inset -20px -20px 60px #ffffff;
+	inset -20px -20px 60px #ffffff;
 }
 
 .app {
@@ -27,15 +28,15 @@ body {
 }
 
 .title {
-	font-family: "Playfair Display", serif;
-	font-optical-sizing: auto;
-	font-weight: 600;
-	font-style: normal;
 	font-size: 4em;
 }
 
 .accent-color {
 	color: #BF9B30;
+}
+
+.secondary-color {
+	color: #D1D8EC;
 }
 
 .btn-neumorphic {
@@ -66,8 +67,14 @@ body {
 	font-style: normal;
 }  
 
+.playfair {
+	font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+}
 
-			
+
 /*
 .shine::before {
 	content: "";

@@ -1,52 +1,19 @@
 .title-section {
     box-sizing: content-box;
     height: 100vh;
-    /*border-bottom: 3px #333 solid;*/
     margin-bottom: 5em;
     box-shadow: 0 -40px 50px -50px #000 inset;
 }
-
-.title-section h1 {
-    font-size: 3rem;
-}
-
-/*
-.title-section::before {
-    content: "";
-    animation: bounce 1.5s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
-    bottom: 2rem;
-    right: 0;
-    position: absolute;
-    width: 30px;
-    height: 34px;
-    background: #333;
-    opacity: 0.7;
-    border-radius: 50px;
-    transform: translateX(-100%);
-}
-
-@keyframes bounce {
-    90% {
-        opacity: 0;
-        transform: translateY(-40%) translateX(-100%);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-40%) translateX(-100%);
-    }
-}
-*/
 
 .gift-card {
 	-webkit-border-radius: 50px;
     border-radius: 50px;
     background: #D1D8EC;
+    border: solid 10px #D1D8EC;
+    background-size: cover;
     -webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
     box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
     margin-bottom: 5em;
-}
-
-.gift-card h4 {
-    position: relative;
-    bottom: 0;
+    width: 300px;
+    height: 300px;
 }
