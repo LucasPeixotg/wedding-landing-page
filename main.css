@@ -77,6 +77,10 @@ header p {
 	border-left: solid 1px #eee;	
 }
 
+.justify {
+	text-wrap: balance;
+}
+
 .montserrat {
 	font-family: "Montserrat", sans-serif;
 	font-optical-sizing: auto;
@@ -109,7 +113,35 @@ header p {
 	color: #f0b71c;
 }
 
-/* TODO: better highlight */
-.highlighted {
-	background-color: #f0b71c;
+.highlight-container, .highlight {
+	position: relative;
+}
+
+.highlight-container {
+	display: inline-block;
+}
+
+.highlight-container:before {
+	content: " ";
+	display: block;
+	height: 60%;
+	width: 0;
+	margin-left: -3px;
+	margin-right: -3px;
+	position: absolute;
+	background: #cc9d1b;
+	transform: rotate(-0.5deg);
+	bottom: 4px;
+	left: 1px;
+	padding: 10px 3px 3px 10px;
+	animation: forwards grow 500ms;
+}
+
+@keyframes grow {
+	from {
+		width: 0;
+	}
+	to {
+		width: calc(100% + 4px);
+	}
 }
