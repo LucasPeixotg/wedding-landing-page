@@ -212,10 +212,17 @@
                 <h4 id="timer" class="fw-bold"></h4>
             </div>
             <div class="mt-5 mt-md-0 col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end">
-                <button class="btn btn-lg btn-light">Ir para o início</button>
+                <button class="btn btn-lg btn-light" onclick="scrollToTop()">Ir para o início</button>
             </div>
         </div>
     </footer>
+
+    <script>
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 
     <script src="timer.js"></script>
 </body>
