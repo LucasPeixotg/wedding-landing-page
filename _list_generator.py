@@ -5,6 +5,9 @@ if __name__ == "__main__":
     items = listdir("./image/gifts")
 
     for item in items:
-        print(f"<div class=\"gift-card col-10 col-md-4 col-lg-3 mx-auto mx-md-3 d-flex align-items-end justify-content-center\" style='background-image: url(\"../image/gifts/{item}\");'>")
-        print(f"\t<h4 class=\"text-center fw-bold montserrat secondary-color\">{item.split('.')[0]}</h4>")
-        print(f"</div>")
+        print("<li class=\"card bg-dark col-10 col-md-4 mb-4 col-lg-3 border-none\">")
+        print(f"\t<img src=\"image/gifts/{item}\" class=\"card-img-top border-inverse-cup\" alt=\"Foto de {item.split('.')[0]}\">")
+        print("\t<div class=\"card-body border-cup rounded-bottom\">")
+        print(f"\t\t<p class=\"card-text text-center fs-3 montserrat\">{item.split('.')[0]}</p>")
+        print("\t</div>")
+        print("</li>")
