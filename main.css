@@ -8,11 +8,11 @@ html {
 
 body {
 	overflow-x: hidden;
-	background-color: #707f62;
+	background-color: #eee;
 }
 
 p {
-	color: #eee;
+	color: #333;
 }
 
 header {
@@ -37,6 +37,9 @@ header p {
 	font-size: 1.5em;
 }
 
+.bg-none {
+	background: none;
+}
 
 .shadow-container {
 	background-color: #0005;
@@ -53,7 +56,7 @@ header p {
 	display: block;
 	height: 1px;
 	width: 100%;
-	background-color: #eee;
+	background-color: #333;
 }
 
 .border-none {
@@ -66,18 +69,22 @@ header p {
 }
 
 .border-inverse-cup {
-	border-right: solid 1px #eee;	
-	border-top:   solid 1px #eee;	
-	border-left:  solid 1px #eee;	
+	border-right: solid 2px #707f62;
+	border-top:   solid 2px #707f62;
+	border-left:  solid 2px #707f62;
 }
 
 .border-cup {
-	border-right: solid 1px #eee;	
-	border-bottom: solid 1px #eee;	
-	border-left: solid 1px #eee;	
+	border-right: solid 2px #707f62;
+	border-bottom: solid 2px #707f62;
+	border-left: solid 2px #707f62;
 }
 
 .justify {
+	text-justify: justify;
+}
+
+.balance {
 	text-wrap: balance;
 }
 
