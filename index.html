@@ -15,6 +15,9 @@
     <title>Casamento</title>
 </head>
 <body>
+    <script defer src="animation.js"></script>
+    <script defer src="timer.js"></script>
+
     <header class="d-flex align-items-center px-5 justify-content-center">
         <div class="col-12 col-lg-5 shadow-container p-3">
             <h1 class="d-none d-md-block lobster white">Matheus <span class="playfair gold">&</span> Amanda</h1>
@@ -23,23 +26,41 @@
         </div>
         <span class="col-md-4 d-none d-lg-block"></span>
     </header>
-    <p class="montserrat px-4 justify fw-bold fs-5 white d-block d-md-none pb-5 bg-accent balance">
+    <p class="montserrat px-4 text-center fw-bold fs-5 white d-block d-md-none pb-5 bg-accent">
         O brilho intenso e apaixonado dos nossos olhares nos fazem lembrar o porquê de chegarmos até aqui...
     </p>
 
     
     <main class="container rounded py-5">
-        <div class="montserrat mb-5">
+        <div class="row montserrat mb-3 py-3">
             <p class="justify">QUERIDO CONVIDADO, SEJA BEM-VINDO AO NOSSO SITE DE CASAMENTO.</p>
             <p class="justify">ACREDITAMOS QUE O CASAMENTO É A CELEBRAÇÃO MAIS SUBLIME DO AMOR E QUE O AMOR E A FELICIDADE DEVEM SER CELEBRADOS E COMPARTILHADOS.</p> 
             <p class="justify">DEIXAMOS AQUI TODAS AS INFORMAÇÕES IMPORTANTES PARA QUE ESSE DIA SEJA ESPECIAL PARA VOCÊ, ASSIM COMO SERÁ PARA NÓS.</p>
         </div>
-        <div class="row mb-5 justify-content-between image-container">
-            <img class="col-12 col-md-5 mb-5" src="image/image.jpg" alt="">
+        
+        <span class="line mb-5"></span>
+
+        <div class="row mb-3 py-3 justify-content-between image-container">
+            <h1 class="lobster text-center pb-2">Nós</h1>
+            <img class="col-12 col-md-5 mb-3 observer-left" src="image/image.jpg" alt="foto dos dois">
             <div class="col-12 col-md-5">
                 <p class="fs-5 justify">Há 11 anos decidimos caminhar juntos. E agora queremos continuar a fazê-lo, juntos, lado a lado, e para sempre. Queremos celebrar o nosso amor e decidimos que vamos casar!</p>
                 <p class="fs-5 justify">Estamos preparando tudo com muito carinho para curtirmos juntos, com nossos familiares e amigos, cada momento inesquecível que está por vir!</p>
             </div>
+        </div>
+        
+        <span class="line mb-5"></span>
+
+        <div class="row mb-5 py-3 justify-content-between image-container">
+            <h1 class="lobster text-center pb-2">Informações do casamento</h1>
+            <img class="col-12 col-md-5 mb-3 observer-left" src="image/igreja.jpg" alt="foto da igreja">
+            <div class="col-12 col-md-5">
+                <p class="fs-5"><strong class="pe-2">Local</strong> Igreja do Rosário - Rosário, São João da Boa Vista - SP</p>
+                <p class="fs-5"><strong class="pe-2">Data </strong>  29 de Junho de 2024, 11:00</p>
+            </div>
+            <!--
+            -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.264406465974!2d-46.800144923768805!3d-21.96281300481975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9cc9d6056b83f%3A0x1d0dcb5f781caca!2sIgreja%20do%20Rosario!5e0!3m2!1spt-BR!2sbr!4v1711370713546!5m2!1spt-BR!2sbr" width="" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <span class="line mb-5"></span>
@@ -47,268 +68,301 @@
         <div class="py-5">
             <h1 class="lobster text-center pb-5">Sugestões de Presentes</h1>
             <ul class="row justify-content-start px-lg-5">    
+
+                <!-- START PRESENTES -->
                 
-
-
-                
-
-
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Jogo de Toalha de Rosto.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Jogo de Toalha de Rosto">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Jogo de Toalha de Rosto</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
-                    <img src="image/gifts/Pipoqueira.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Pipoqueira">
-                    <div class="card-body bg-accent border-cup rounded-bottom">
-                        <p class="card-text text-center white fs-3 montserrat">Pipoqueira</p>
-                    </div>
-                </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Tapete para a Sala.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Tapete para a Sala">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Tapete para a Sala</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Jogo de Taças.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Jogo de Taças">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Jogo de Taças</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Air Fryer.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Air Fryer">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Air Fryer</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Panela de Pedra.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Panela de Pedra">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Panela de Pedra</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
+                    <img src="image/gifts/Jogo Lixeira Inox.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Jogo Lixeira Inox">
+                    <div class="card-body bg-accent border-cup rounded-bottom">
+                        <p class="card-text text-center white fs-3 montserrat">Jogo Lixeira Inox</p>
+                    </div>
+                </li>
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Varal de Chão.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Varal de Chão">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Varal de Chão</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Vaquinha pro Casório R$150,00.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Vaquinha pro Casório R$150,00">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Vaquinha pro Casório R$150,00</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/TV.jpeg" class="card-img-top border-inverse-cup" alt="Foto de TV">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">TV</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Refratário de Vidro.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Refratário de Vidro">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Refratário de Vidro</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Microondas.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Microondas">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Microondas</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Jogo de Facas.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Jogo de Facas">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Jogo de Facas</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Escorredor de Louças Inox.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Escorredor de Louças Inox">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Escorredor de Louças Inox</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Frigideira.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Frigideira">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Frigideira</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Fogão.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Fogão">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Fogão</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Forma de Pizza.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Forma de Pizza">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Forma de Pizza</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Aspirador de Pó.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Aspirador de Pó">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Aspirador de Pó</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Rodízio de Japa pros Noivos R$200,00.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Rodízio de Japa pros Noivos R$200,00">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Rodízio de Japa pros Noivos R$200,00</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Cuzcuzeira.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Cuzcuzeira">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Cuzcuzeira</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Mixer.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Mixer">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Mixer</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Vaquinha Lua de Mel (O que seu coração mandar kkkk).jpeg" class="card-img-top border-inverse-cup" alt="Foto de Vaquinha Lua de Mel (O que seu coração mandar kkkk)">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Vaquinha Lua de Mel (O que seu coração mandar kkkk)</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Gamela com Tampa de Vidro.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Gamela com Tampa de Vidro">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Gamela com Tampa de Vidro</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Churrasqueira boca de fogão.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Churrasqueira boca de fogão">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Churrasqueira boca de fogão</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Cafeteira.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Cafeteira">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Cafeteira</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Jogo de Copos.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Jogo de Copos">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Jogo de Copos</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Panela de Pressão.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Panela de Pressão">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Panela de Pressão</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
+                    <img src="image/gifts/Kit Travesseiro.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Kit Travesseiro">
+                    <div class="card-body bg-accent border-cup rounded-bottom">
+                        <p class="card-text text-center white fs-3 montserrat">Kit Travesseiro</p>
+                    </div>
+                </li>
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Churrasqueira Elétrica.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Churrasqueira Elétrica">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Churrasqueira Elétrica</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/1 Mês de Academia pros Noivos R$200,00.jpeg" class="card-img-top border-inverse-cup" alt="Foto de 1 Mês de Academia pros Noivos R$200,00">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">1 Mês de Academia pros Noivos R$200,00</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Frigideira Wok.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Frigideira Wok">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Frigideira Wok</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Potes Herméticos.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Potes Herméticos">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Potes Herméticos</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Toalhas.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Toalhas">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Toalhas</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Porta Mantimentos.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Porta Mantimentos">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Porta Mantimentos</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Porta Tempeiros.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Porta Tempeiros">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Porta Tempeiros</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Passeio de Teleférico R$100,00.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Passeio de Teleférico R$100,00">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Passeio de Teleférico R$100,00</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Jogo de Talher.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Jogo de Talher">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Jogo de Talher</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
+                    <img src="image/gifts/Pipoqueira.jpg" class="card-img-top border-inverse-cup" alt="Foto de Pipoqueira">
+                    <div class="card-body bg-accent border-cup rounded-bottom">
+                        <p class="card-text text-center white fs-3 montserrat">Pipoqueira</p>
+                    </div>
+                </li>
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Kit Churrasco.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Kit Churrasco">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Kit Churrasco</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
+                    <img src="image/gifts/Ar-Condicionado.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Ar-Condicionado">
+                    <div class="card-body bg-accent border-cup rounded-bottom">
+                        <p class="card-text text-center white fs-3 montserrat">Ar-Condicionado</p>
+                    </div>
+                </li>
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Jogo de Cama Casal Box.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Jogo de Cama Casal Box">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Jogo de Cama Casal Box</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Mala de Viagens.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Mala de Viagens">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Mala de Viagens</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Jogo de Pratos.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Jogo de Pratos">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Jogo de Pratos</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
+                    <img src="image/gifts/Lavadora WAP.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Lavadora WAP">
+                    <div class="card-body bg-accent border-cup rounded-bottom">
+                        <p class="card-text text-center white fs-3 montserrat">Lavadora WAP</p>
+                    </div>
+                </li>
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Jogo de Xícaras de Café.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Jogo de Xícaras de Café">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Jogo de Xícaras de Café</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
+                    <img src="image/gifts/Jogo de Taças .jpeg" class="card-img-top border-inverse-cup" alt="Foto de Jogo de Taças ">
+                    <div class="card-body bg-accent border-cup rounded-bottom">
+                        <p class="card-text text-center white fs-3 montserrat">Jogo de Taças </p>
+                    </div>
+                </li>
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Chapa de Ferro.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Chapa de Ferro">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Chapa de Ferro</p>
                     </div>
                 </li>
-                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none">
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
                     <img src="image/gifts/Liquidificador.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Liquidificador">
                     <div class="card-body bg-accent border-cup rounded-bottom">
                         <p class="card-text text-center white fs-3 montserrat">Liquidificador</p>
                     </div>
                 </li>
+                <li class="card bg-none col-10 col-md-4 mb-4 col-lg-3 border-none observer-left">
+                    <img src="image/gifts/Mesa 4 Lugares.jpeg" class="card-img-top border-inverse-cup" alt="Foto de Mesa 4 Lugares">
+                    <div class="card-body bg-accent border-cup rounded-bottom">
+                        <p class="card-text text-center white fs-3 montserrat">Mesa 4 Lugares</p>
+                    </div>
+                </li>
                 
 
+                <!-- END PRESENTES -->
 
-                
             </ul>
         </div>
     </main>
@@ -322,7 +376,7 @@
             <div class="mx-auto container row justify-content-between align-items-center">
                 <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-start">
                     <h3 class="white">Cerimônia dia 29 jun 2024</h4>
-                <h4 id="timer" class="fw-bold"></h4>
+                <h4 id="timer" class="fw-bold white"></h4>
             </div>
             <div class="mt-5 mt-md-0 col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end">
                 <button class="btn btn-lg btn-light" onclick="scrollToTop()">Ir para o início</button>
@@ -337,6 +391,5 @@
         }
     </script>
 
-    <script src="timer.js"></script>
 </body>
 </html>
