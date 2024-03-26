@@ -13,8 +13,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>Casamento</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </head>
 <body>
+    <script>
+        window.onload = () => {
+            document.getElementById("launchModal").click()
+        }
+
+        function playAudio() {
+            const audio = document.querySelector("audio")
+                audio.volume = 0.02
+                audio.play()
+        }
+
+    </script>
+
+    <div id="exampleModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Este site contém uma playlist musical escolhida pelos noivos.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar sem o aúdio</button>
+                    <button type="button" class="btn btn-primary bg-accent" data-bs-dismiss="modal" onclick="playAudio()">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" id="launchModal" class="d-none" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
+
+    <audio src="sabe.mp3" type="audio/mpeg" preload="auto" loop>
+        Seu navegador não suporta a playlist musical
+    </audio>
     
     <script defer src="animation.js"></script>
     <script defer src="timer.js"></script>
@@ -31,11 +65,8 @@
         O brilho intenso e apaixonado dos nossos olhares nos fazem lembrar o porquê de chegarmos até aqui...
     </p>
     
-    <audio src="sabe.mp3" type="audio/mpeg" preload="auto" loop>
-        Seu navegador não suporta a playlist musical
-    </audio>
     
-    <main class="container rounded py-5 audio-play">
+    <main class="container rounded py-5">
         <div class="row montserrat mb-3 py-3">
             <p class="justify">QUERIDO CONVIDADO, SEJA BEM-VINDO AO NOSSO SITE DE CASAMENTO.</p>
             <p class="justify">ACREDITAMOS QUE O CASAMENTO É A CELEBRAÇÃO MAIS SUBLIME DO AMOR E QUE O AMOR E A FELICIDADE DEVEM SER CELEBRADOS E COMPARTILHADOS.</p> 
