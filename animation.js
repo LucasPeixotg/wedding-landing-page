@@ -4,7 +4,7 @@ const observer = new IntersectionObserver((entries) => {
         else if(entry.isIntersecting && entry.target.classList.contains("audio-play")) {
             entry.target.classList.remove("audio-play")
             const audio = document.querySelector("audio")
-            audio.volume = 0.05
+            audio.volume = 0.02
             audio.play()
         }
     })
