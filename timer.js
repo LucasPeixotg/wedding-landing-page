@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Jun 29, 2024 11:00:00").getTime()
+var countDownDate = new Date("Jun 29, 2024 10:00:00").getTime()
 
 const timer_element = document.getElementById("timer")
 
@@ -22,6 +22,6 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x)
-    timer_element.innerHTML = "EXPIRED"
+    timer_element.innerHTML = "CHEGOU O MOMENTO"
   }
 }, 1000)
