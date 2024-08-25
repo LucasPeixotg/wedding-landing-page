@@ -2,4 +2,4 @@
 
 Wedding landing page made to provide weddings informations to guests
 Deployed with Github Pages:
-https://lucaspeixotg.github.io/matheus-amanda/
+[HERE](https://lucaspeixotg.github.io/matheus-amanda/)
