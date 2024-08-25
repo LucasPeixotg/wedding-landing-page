@@ -1,6 +1,18 @@
 # Wedding Landing Page
 
-Wedding landing page made to provide weddings informations to guests.
+Landing page made to provide wedding informations to guests.
 
+## Technologies ##
+
+The following tools were used in this project:
+
+- JS
+- HTML
+- CSS
+- BOOTSTRAP
+ 
+<br>
+
+## Deployment
 Deployed with Github Pages:
 [HERE](https://lucaspeixotg.github.io/matheus-amanda/)
