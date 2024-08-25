@@ -15,4 +15,4 @@ The following tools were used in this project:
 
 ## Deployment
 Deployed with Github Pages:
-[HERE](https://lucaspeixotg.github.io/matheus-amanda/)
+[HERE](https://lucaspeixotg.github.io/wedding-landing-page/)
